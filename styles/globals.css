@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**** TAILWIND CLASSES ****/
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold  text-shades-600;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  h4 {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-sm;
+  }
+  h6 {
+    @apply text-xs;
+  }
+
+  p {
+    color: #6d6d78;
+  }
+
+  /* paragraph font size */
+  .paragraph-1 {
+    @apply text-xl;
+  }
+  .paragraph-2 {
+    @apply text-lg;
+  }
+  .paragraph-3 {
+    @apply text-sm;
+  }
+  .paragraph-4 {
+    @apply text-xs;
+  }
+
+  /* default screen view */
+  .default-container {
+    @apply mx-auto max-w-screen-xl;
+  }
+
+  /* BUTTONS */
+  .button {
+    @apply bg-primary  hover:bg-primary-dark  relative w-full cursor-pointer  rounded-lg text-center  transition-all  hover:text-white;
+  }
+  /* END BUTTONS */
+
+  /* BORDERS */
+  .default-border {
+    @apply rounded-full border-2 border-gray-100 p-3 px-5;
+  }
+  /* END BORDERS */
+
+  /*  ANIMATION */
+  .animate-500 {
+    @apply transition-all duration-500;
+  }
+  /*  END ANIMATION */
+}
+
+/**** END TAILWIND CLASSES ****/
