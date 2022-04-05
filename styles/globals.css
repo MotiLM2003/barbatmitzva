@@ -13,6 +13,9 @@
     @apply font-semibold  text-shades-600;
   }
 
+  input {
+    text-align: right !important;
+  }
   h1 {
     @apply text-2xl;
   }
